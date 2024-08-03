@@ -1,0 +1,108 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center; /* Merkezi hizalama ekledim */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  margin-bottom: 20px;
+}
+
+.todo-input input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.todo-input button {
+  background-color: rgb(16, 167, 190); /* Mavi arka plan */
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-buttons {
+  margin: 20px 0;
+}
+
+.filter-buttons button {
+  background-color: rgb(16, 167, 190); /* Mavi arka plan */
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.delete-buttons {
+  margin: 20px 0;
+}
+
+.delete-buttons .delete-btn {
+  background-color: rgb(206, 10, 10); /* Kırmızı arka plan */
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.todo-list-container {
+  margin: 0 auto;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-list h2 {
+  color: #333;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #e74c3c; /* Kırmızı renk */
+}
+
+.todo-list li span {
+  cursor: pointer;
+  flex: 1;
+}
+
+.todo-list li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-list li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.todo-list li .delete-btn {
+  color: #e74c3c; /* Kırmızı renk */
+}
+
+.todo-list li .edit-btn {
+  color: #f39c12; /* Turuncu renk */
+}
+

@@ -1,0 +1,180 @@
+# SPEED DATA
+------------------------------------------------------------
+    http://localhost:4444/api/todos/speed/5
+
+    curl -X 'GET' \
+    'http://localhost:4444/api/todos/speed/5' \
+    -H 'accept: */*'
+
+
+# DELETE ALL
+------------------------------------------------------------
+   http://localhost:4444/api/todos/delete/all
+
+   curl -X 'DELETE' \
+     'http://localhost:4444/api/todos/delete/all' \
+     -H 'accept: */*'
+
+
+# LIST
+------------------------------------------------------------
+    http://localhost:4444/api/todos/all
+
+    curl -X 'GET' \
+      'http://localhost:4444/api/todos/all' \
+      -H 'accept: */*'
+
+
+# FIND
+------------------------------------------------------------
+    http://localhost:4444/api/todos/find/1
+
+   curl -X 'GET' \
+     'http://localhost:4444/api/todos/find/1' \
+     -H 'accept: */*'
+
+
+# CREATE
+------------------------------------------------------------
+     POST
+     http://localhost:4444/api/todos/create
+
+     {
+       "taskName": "Task Example",
+       "completed": false,
+       "details": "Task details",
+       "userId": 1
+     }
+
+     curl -X 'POST' \
+       'http://localhost:4444/api/todos/create' \
+       -H 'accept: */*' \
+       -H 'Content-Type: application/json' \
+       -d '{
+       "taskName": "Task Example",
+       "completed": false,
+       "details": "Task details",
+       "userId": 1
+     }'
+
+
+# UPDATE
+------------------------------------------------------------
+     PUT
+     http://localhost:4444/api/todos/update/4
+     {
+        "taskName": "Updated Task Example",
+        "completed": true,
+        "details": "Updated task details"
+     }
+
+     curl -X 'PUT' \
+       'http://localhost:4444/api/todos/update/4' \
+       -H 'accept: */*' \
+       -H 'Content-Type: application/json' \
+       -d '{
+       "taskName": "Updated Task Example",
+       "completed": true,
+       "details": "Updated task details"
+     }'
+
+
+# DELETE
+------------------------------------------------------------
+     DELETE
+     http://localhost:4444/api/todos/delete/4
+
+     curl -X 'DELETE' \
+       'http://localhost:4444/api/todos/delete/4' \
+       -H 'accept: */*'
+
+
+# USER ENDPOINTS
+------------------------------------------------------------
+
+# CREATE USER
+------------------------------------------------------------
+     POST
+     http://localhost:4444/api/users/create
+
+     {
+       "username": "user1",
+       "password": "password",
+       "email": "user1@example.com"
+     }
+
+     curl -X 'POST' \
+       'http://localhost:4444/api/users/create' \
+       -H 'accept: */*' \
+       -H 'Content-Type: application/json' \
+       -d '{
+       "username": "user1",
+       "password": "password",
+       "email": "user1@example.com"
+     }'
+
+
+# LIST USERS
+------------------------------------------------------------
+    http://localhost:4444/api/users/all
+
+    curl -X 'GET' \
+      'http://localhost:4444/api/users/all' \
+      -H 'accept: */*'
+
+
+# FIND USER BY ID
+------------------------------------------------------------
+    http://localhost:4444/api/users/find/1
+
+   curl -X 'GET' \
+     'http://localhost:4444/api/users/find/1' \
+     -H 'accept: */*'
+
+
+# UPDATE USER
+------------------------------------------------------------
+     PUT
+     http://localhost:4444/api/users/update/1
+     {
+        "username": "updatedUser1",
+        "password": "newpassword",
+        "email": "updatedUser1@example.com"
+     }
+
+     curl -X 'PUT' \
+       'http://localhost:4444/api/users/update/1' \
+       -H 'accept: */*' \
+       -H 'Content-Type: application/json' \
+       -d '{
+       "username": "updatedUser1",
+       "password": "newpassword",
+       "email": "updatedUser1@example.com"
+     }'
+
+
+# DELETE USER
+------------------------------------------------------------
+     DELETE
+     http://localhost:4444/api/users/delete/1
+
+     curl -X 'DELETE' \
+       'http://localhost:4444/api/users/delete/1' \
+       -H 'accept: */*'
+
+# FIND USER BY USERNAME
+------------------------------------------------------------
+    http://localhost:4444/api/users/findByUsername/user1
+
+   curl -X 'GET' \
+     'http://localhost:4444/api/users/findByUsername/user1' \
+     -H 'accept: */*'
+
+
+# FIND USER BY EMAIL
+------------------------------------------------------------
+    http://localhost:4444/api/users/findByEmail/user1@example.com
+
+   curl -X 'GET' \
+     'http://localhost:4444/api/users/findByEmail/user1@example.com' \
+     -H 'accept: */*'

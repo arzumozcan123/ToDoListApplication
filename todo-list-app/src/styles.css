@@ -1,0 +1,127 @@
+/* Genel ayarlar */
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Form ve giriş alanları */
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #17a2b8; /* Turkuaz mavi */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #138496; /* Daha koyu turkuaz mavi */
+}
+
+/* Todo Item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #d9534f; /* Kırmızı */
+}
+
+.todo-item span {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+button.edit, button.delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.edit:hover {
+  color: #ffc107; /* Turuncu */
+}
+
+button.delete:hover {
+  color: #dc3545; /* Kırmızı */
+}
+
+/* Todo List ve Filter Butonları */
+.todo-list-container {
+  text-align: center; /* Merkezi hizalama */
+}
+
+.todo-list-container h2 {
+  margin-bottom: 20px;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  background-color: #17a2b8; /* Turkuaz mavi */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #138496; /* Daha koyu turkuaz mavi */
+}
+
+/* Delete Buttons */
+.delete-buttons {
+  margin-top: 20px;
+}
+
+.delete-buttons button.delete-done-tasks,
+.delete-buttons button.delete-all-tasks {
+  background-color: #dc3545; /* Kırmızı */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.delete-buttons button.delete-done-tasks:hover,
+.delete-buttons button.delete-all-tasks:hover {
+  background-color: #c82333; /* Daha koyu kırmızı */
+}
+
+/* Add New Task Butonu */
+.add-new-task {
+  background-color: #17a2b8; /* Turkuaz mavi */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.add-new-task:hover {
+  background-color: #138496; /* Daha koyu turkuaz mavi */
+}
