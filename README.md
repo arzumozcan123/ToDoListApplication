@@ -11,6 +11,7 @@ Spring Boot And React JS
 Backend: 
 Java Core
 Spring Framework
+MySQL
 
 Frontend: 
 React JS
@@ -28,7 +29,7 @@ BOOTSTRAP5
 JQUERY
 JAVASCRIPT
 SQL
-MYSQL
+MySQL
 JAVA CORE
 SPRING FRAMEWORK
 SPRING BOOT
@@ -37,17 +38,11 @@ SPRING BOOT
 Thymeleaf
 Lombok
 Validation
-Mysql
-Postgresql
 Model Mapper
 Password Encoder
 Open Api Configuration
-H2DB
-MYSQL
-POSTGRESQL
+MySQL
 JAVA CORE
 SPRING FRAMEWORK
 SPRING BOOT
 MVC(MODEL-VİEW-CONTROLLER)
-
-
