@@ -5,7 +5,7 @@
 
 ## N-Tier Architecture
 
-## Blog Project:
+## TodoList Project:
 Spring Boot And React JS
 
 Backend: 
@@ -48,6 +48,6 @@ POSTGRESQL
 JAVA CORE
 SPRING FRAMEWORK
 SPRING BOOT
-MVC (MODEL-VİEW-CONTROLLER)
+MVC(MODEL-VİEW-CONTROLLER)
 
 
