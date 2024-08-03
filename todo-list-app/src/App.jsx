@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Todo Input</h1>
+      <h1>TodoInput</h1>
       <TodoInput addTodo={addTodo} />
       <TodoList
         todos={filteredTodos}

@@ -1,28 +1,29 @@
-/* Genel ayarlar */
+/* App container */
 .App {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  text-align: center; /* Tüm uygulamayı ortalar */
 }
 
-/* Form ve giriş alanları */
+/* Todo Input */
 form {
   display: flex;
   margin-bottom: 20px;
+  flex-direction: column; /* Yataydan dikey hizaya geç */
 }
 
 input[type="text"] {
-  flex-grow: 1;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  margin-bottom: 10px; /* Araya boşluk ekler */
 }
 
 button {
   padding: 10px;
-  margin-left: 10px;
-  background-color: #17a2b8; /* Turkuaz mavi */
+  background-color: #1abc9c; /* Turkuaz mavi */
   color: white;
   border: none;
   border-radius: 4px;
@@ -30,10 +31,45 @@ button {
 }
 
 button:hover {
-  background-color: #138496; /* Daha koyu turkuaz mavi */
+  background-color: #16a085; /* Daha koyu bir turkuaz */
 }
 
-/* Todo Item */
+/* Filter Buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+button.filter {
+  padding: 10px; /* Padding azaltıldı */
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 4px; /* Daha küçük radius */
+  cursor: pointer;
+  font-size: 1em; /* Font boyutu bir tık küçüldü */
+  margin: 5px; /* Butonlar arasında biraz boşluk */
+}
+
+button.filter.active {
+  background-color: #16a085;
+}
+
+.todo-list-container {
+  margin-top: 20px;
+}
+
+.todo-list-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .todo-item {
   display: flex;
   align-items: center;
@@ -44,7 +80,7 @@ button:hover {
 
 .todo-item.completed span {
   text-decoration: line-through;
-  color: #d9534f; /* Kırmızı */
+  color: #d9534f;
 }
 
 .todo-item span {
@@ -52,44 +88,30 @@ button:hover {
   cursor: pointer;
 }
 
-button.edit, button.delete {
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-actions button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-button.edit:hover {
-  color: #ffc107; /* Turuncu */
+.todo-actions button.edit {
+  color: #f39c12;
 }
 
-button.delete:hover {
-  color: #dc3545; /* Kırmızı */
+.todo-actions button.delete {
+  color: #e74c3c;
 }
 
-/* Todo List ve Filter Butonları */
-.todo-list-container {
-  text-align: center; /* Merkezi hizalama */
+.todo-actions button.edit:hover {
+  color: #e67e22;
 }
 
-.todo-list-container h2 {
-  margin-bottom: 20px;
-}
-
-.filter-buttons {
-  margin-bottom: 20px;
-}
-
-.filter-buttons button {
-  background-color: #17a2b8; /* Turkuaz mavi */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.filter-buttons button:hover {
-  background-color: #138496; /* Daha koyu turkuaz mavi */
+.todo-actions button.delete:hover {
+  color: #c0392b;
 }
 
 /* Delete Buttons */
@@ -97,31 +119,17 @@ button.delete:hover {
   margin-top: 20px;
 }
 
-.delete-buttons button.delete-done-tasks,
-.delete-buttons button.delete-all-tasks {
-  background-color: #dc3545; /* Kırmızı */
+button.delete-tasks {
+  background-color: #e74c3c; /* Kırmızı arka plan */
   color: white;
   border: none;
-  padding: 10px 20px;
-  margin: 5px;
+  border-radius: 4px; /* Daha küçük radius */
+  padding: 10px; /* Padding azaltıldı */
   cursor: pointer;
+  font-size: 1em; /* Font boyutu bir tık küçüldü */
+  margin: 5px; /* Butonlar arasında biraz boşluk */
 }
 
-.delete-buttons button.delete-done-tasks:hover,
-.delete-buttons button.delete-all-tasks:hover {
-  background-color: #c82333; /* Daha koyu kırmızı */
-}
-
-/* Add New Task Butonu */
-.add-new-task {
-  background-color: #17a2b8; /* Turkuaz mavi */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.add-new-task:hover {
-  background-color: #138496; /* Daha koyu turkuaz mavi */
+button.delete-tasks:hover {
+  background-color: #c0392b;
 }
