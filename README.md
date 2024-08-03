@@ -7,27 +7,47 @@
 
 ## Blog Project:
 Spring Boot And React JS
+
 Backend: 
-1.Java Core
-2.Spring Framework
+Java Core
+Spring Framework
+
 Frontend: 
-1.React JS 
-2.JS 
-3.+ES5
--🎁 BLOG
+React JS
+JS
++ES5 
+HTML5
+CSS3
 
 ## TECHNOLOGY && Features
-1)HTML5
-2)CSS3
-3)RESPONSIVE DESIGN
-4)JS
-5)BOOTSTRAP5
-6)JQUERY
-7)JAVASCRIPT
-8)SQL
-9)MYSQL
-10)JAVA CORE
-11)SPRING FRAMEWORK
-12)SPRING BOOT
+HTML5
+CSS3
+RESPONSIVE DESIGN
+JS
+BOOTSTRAP5
+JQUERY
+JAVASCRIPT
+SQL
+MYSQL
+JAVA CORE
+SPRING FRAMEWORK
+SPRING BOOT
+
+## Libraries && Programming
+Thymeleaf
+Lombok
+Validation
+Mysql
+Postgresql
+Model Mapper
+Password Encoder
+Open Api Configuration
+H2DB
+MYSQL
+POSTGRESQL
+JAVA CORE
+SPRING FRAMEWORK
+SPRING BOOT
+MVC (MODEL-VİEW-CONTROLLER)
 
 
