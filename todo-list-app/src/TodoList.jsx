@@ -11,7 +11,7 @@ const TodoList = ({ todos, toggleTodo, editTodo, deleteTodo, deleteCompletedTodo
 
   return (
     <div className="todo-list-container">
-      <h2>TodoList</h2> {/* "TodoList" başlığı */}
+      <h2>TodoList</h2> {/* "TodoList" header */}
       <div className="filter-buttons">
         <button className="filter" onClick={() => setFilter('all')}>All</button>
         <button className="filter" onClick={() => setFilter('done')}>Done</button>
@@ -38,7 +38,7 @@ const TodoList = ({ todos, toggleTodo, editTodo, deleteTodo, deleteCompletedTodo
             </li>
           ))
         ) : (
-          <li>No todos available</li> /* Eğer liste boşsa bu mesajı gösterir */
+          <li>No todos available</li>
         )}
       </ul>
       <div className="delete-buttons">
