@@ -4,26 +4,26 @@
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-  text-align: center; /* Tüm uygulamayı ortalar */
+  text-align: center;
 }
 
 /* Todo Input */
 form {
   display: flex;
   margin-bottom: 20px;
-  flex-direction: column; /* Yataydan dikey hizaya geç */
+  flex-direction: column;
 }
 
 input[type="text"] {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  margin-bottom: 10px; /* Araya boşluk ekler */
+  margin-bottom: 10px;
 }
 
 button {
   padding: 10px;
-  background-color: #1abc9c; /* Turkuaz mavi */
+  background-color: #1abc9c;
   color: white;
   border: none;
   border-radius: 4px;
@@ -31,7 +31,7 @@ button {
 }
 
 button:hover {
-  background-color: #16a085; /* Daha koyu bir turkuaz */
+  background-color: #16a085; 
 }
 
 /* Filter Buttons */
@@ -42,14 +42,14 @@ button:hover {
 }
 
 button.filter {
-  padding: 10px; /* Padding azaltıldı */
+  padding: 10px; 
   background-color: #1abc9c;
   color: white;
   border: none;
-  border-radius: 4px; /* Daha küçük radius */
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 1em; /* Font boyutu bir tık küçüldü */
-  margin: 5px; /* Butonlar arasında biraz boşluk */
+  font-size: 1em;
+  margin: 5px; 
 }
 
 button.filter.active {
@@ -120,14 +120,14 @@ button.filter.active {
 }
 
 button.delete-tasks {
-  background-color: #e74c3c; /* Kırmızı arka plan */
+  background-color: #e74c3c;
   color: white;
   border: none;
-  border-radius: 4px; /* Daha küçük radius */
-  padding: 10px; /* Padding azaltıldı */
+  border-radius: 4px; 
+  padding: 10px; 
   cursor: pointer;
-  font-size: 1em; /* Font boyutu bir tık küçüldü */
-  margin: 5px; /* Butonlar arasında biraz boşluk */
+  font-size: 1em; 
+  margin: 5px; 
 }
 
 button.delete-tasks:hover {
