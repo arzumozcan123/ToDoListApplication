@@ -101,6 +101,6 @@ public class ToDoServiceImpl implements ITodoService<TodoDto, Todo> {
         Todo todo = toDoRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Todo not found with id " + id));
         toDoRepository.delete(todo);
-        return entityToDto(todo); // Returning deleted entity as DTO
+        return entityToDto(todo);
     }
 }

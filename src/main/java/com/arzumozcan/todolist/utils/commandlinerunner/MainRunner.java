@@ -39,26 +39,26 @@ public class MainRunner {
 
             // Sample User 1
             User user1 = User.builder()
-                    .username("user1")
-                    .password("password1")
-                    .email("user1@example.com")
+                    .username("John")
+                    .password("john_34")
+                    .email("johnstan@email.com")
                     .todos(new HashSet<>())
                     .build();
             userRepository.save(user1);
 
             // Sample User 2
             User user2 = User.builder()
-                    .username("user2")
-                    .password("password2")
-                    .email("user2@example.com")
+                    .username("melisa")
+                    .password("melisa67")
+                    .email("mel222@email.com")
                     .todos(new HashSet<>())
                     .build();
             userRepository.save(user2);
 
             // Sample Todo 1 for User 1
             Todo todo1 = Todo.builder()
-                    .taskName("Task 1 for User 1")
-                    .details("Details for Task 1")
+                    .taskName("Learn React.js")
+                    .details("Todo")
                     .completed(false)
                     .user(user1)
                     .build();
@@ -68,8 +68,8 @@ public class MainRunner {
 
             // Sample Todo 2 for User 1
             Todo todo2 = Todo.builder()
-                    .taskName("Task 2 for User 1")
-                    .details("Details for Task 2")
+                    .taskName("Study Java")
+                    .details("Done")
                     .completed(false)
                     .user(user1)
                     .build();
@@ -79,8 +79,8 @@ public class MainRunner {
 
             // Sample Todo 1 for User 2
             Todo todo3 = Todo.builder()
-                    .taskName("Task 1 for User 2")
-                    .details("Details for Task 1 for User 2")
+                    .taskName("Learn React.js")
+                    .details("Todo")
                     .completed(false)
                     .user(user2)
                     .build();
