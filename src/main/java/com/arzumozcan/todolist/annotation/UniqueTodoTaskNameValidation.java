@@ -4,7 +4,7 @@ import com.arzumozcan.todolist.data.repository.IToDoRepository;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+
 
 // LOMBOK
 @RequiredArgsConstructor

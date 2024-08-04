@@ -70,7 +70,7 @@ public class MainRunner {
             Todo todo2 = Todo.builder()
                     .taskName("Study Java")
                     .details("Done")
-                    .completed(false)
+                    .completed(true)
                     .user(user1)
                     .build();
             todoRepository.save(todo2);
