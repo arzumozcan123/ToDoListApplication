@@ -8,6 +8,14 @@ function App() {
   const [filter, setFilter] = useState('all');
 
   const addTodo = (newTodo) => {
+    // Aynı isimde bir görev olup olmadığını kontrol et
+    const isDuplicate = todos.some((todo) => todo.task.toLowerCase() === newTodo.task.toLowerCase());
+    
+    if (isDuplicate) {
+      alert("Bu isimde bir görev zaten mevcut. Lütfen farklı bir isim seçin.");
+      return;
+    }
+
     newTodo.id = new Date().getTime();
     setTodos([...todos, newTodo]);
   };
